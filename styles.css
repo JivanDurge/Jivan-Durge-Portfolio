@@ -243,6 +243,14 @@ nav {
   display: grid;
   gap: 1rem;
 }
+/* changes made by me  */
+service__grid__new{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center; /* center horizontally */ 
+
+}
+
 
 .service__card {
   padding: 2rem 1rem;
@@ -280,8 +288,33 @@ nav {
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+   position: relative;
+  
+}
+/* change by jivan */
+
+.portfolio__caption {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  /* background: 
+  rgba(253, 253, 253, 0.6); */
+  background: transparent;
+  color: #f3dcdc;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
+
+.portfolio__card:hover .portfolio__caption {
+  opacity: 1;
+    background: rgba(0.4, 0.4, 0.4, 0.4);
+  
+}
 .portfolio__card img {
   transition: 0.5s;
 }
